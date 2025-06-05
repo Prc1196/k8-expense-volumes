@@ -34,8 +34,8 @@ spec:
       - name: nginx
         image: prc1196/backend:1.0.0
         envFrom:
-      - configMapRef:
-        name: backend
+        - configMapRef:
+            name: backend
 ---
 kind: Service
 apiVersion: v1
