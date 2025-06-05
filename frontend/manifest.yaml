@@ -87,7 +87,6 @@ spec:
          tier: web
          purpose: expense
     spec:
-      containers:
       volumes:
        - name: nginx
          configMap:
@@ -95,6 +94,7 @@ spec:
             items:
             - key: nginx.conf
               path: nginx.conf
+      containers:
        - name: nginx
          image: prc1196/frontend:1.2.0
          ports:
