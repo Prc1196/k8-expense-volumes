@@ -25,7 +25,7 @@ spec:
        purpose: expense
   template:
     metadata:
-    labels:
+      labels:
          app: backend
          tier: backend
          purpose: expense
