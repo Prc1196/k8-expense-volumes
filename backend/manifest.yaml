@@ -25,12 +25,12 @@ spec:
        purpose: expense
   template:
     metadata:
-      labels:
+    labels:
          app: backend
          tier: backend
          purpose: expense
     spec:
-      containers:
+    containers:
       - name: nginx
         image: prc1196/backend:1.0.0
         envFrom:
